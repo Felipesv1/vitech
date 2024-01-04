@@ -64,7 +64,6 @@
   transition: transform 0.5s ease-in-out;
 }
 .depositions .box_testimonials .slide_testimonial {
-  width: 100%;
   display: flex;
   gap: 59.99px;
   transition: tranform 0.5s ease-in-out;
@@ -172,7 +171,8 @@
     width: 65%;
   }
 }
-@media screen and (min-width: 300px) and (max-width: 850px) {
+
+@media screen and (min-width: 300px) and (max-width: 1166px) {
   .depositions {
     padding: 125px 0 130px 0;
   }
