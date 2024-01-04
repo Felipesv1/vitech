@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
   height: auto;
-  padding: 125px 292.5px 130px 292.5px;
+  padding: 125px 220.5px 130px 292.5px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -64,6 +64,7 @@
   transition: transform 0.5s ease-in-out;
 }
 .depositions .box_testimonials .slide_testimonial {
+  width: 100%;
   display: flex;
   gap: 59.99px;
   transition: tranform 0.5s ease-in-out;
