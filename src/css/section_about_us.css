@@ -1,0 +1,244 @@
+.section_about_us {
+  width: 100%;
+  background: var(--bg-secondary-color);
+  overflow: hidden;
+}
+
+.section_about_us .card_about_us {
+  display: flex;
+  width: 100%;
+  padding: 130px 304.5px 0px 304.5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.section_about_us .card_about_us .card_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  background: #fff;
+  position: relative;
+}
+.section_about_us .card_about_us .card_wrapper .card_box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.section_about_us .card_about_us .card_wrapper .card_box .dots {
+  display: flex;
+  width: 6rem;
+  height: 25px;
+  padding: 7.5px;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  border-radius: 40px;
+  background: var(--bg-primary-color-btn);
+  position: absolute;
+  bottom: -10px;
+}
+.section_about_us .card_about_us .card_wrapper .card_box .dots span {
+  width: 1rem;
+  height: 10px;
+  border-radius: 5px;
+  opacity: 0.3;
+  background: #e6eefb;
+}
+.section_about_us .card_about_us .card_wrapper .card_box .content_card {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+}
+.section_about_us .card_about_us .card_wrapper .card_box .content_card p {
+  color: #1b2e59;
+  font-family: "Archivo";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: center;
+}
+
+.section_about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section_about .about_content_wrapper {
+  width: 56rem;
+  height: 568.39px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.section_about .about_content_wrapper .heading {
+  width: 55.6rem;
+  height: 253.39px;
+}
+.section_about .about_content_wrapper .heading p {
+  color: #266ff2;
+  font-family: "Arimo";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+}
+.section_about .about_content_wrapper .heading .pseudo {
+  width: 96.39px;
+  height: 2px;
+  background: #266ff2;
+}
+.section_about .about_content_wrapper .heading h2 {
+  width: 55.7rem;
+  color: #1b2e59;
+  font-family: "Archivo";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -0.48px;
+  margin-top: 20px;
+}
+
+.section_about .about_content_wrapper .heading .box_span {
+  width: 52rem;
+  height: 60px;
+  color: #727885;
+  font-family: "Arimo";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 30px;
+}
+
+.section_about .list_characteristics {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+.section_about .list_characteristics li {
+  width: 100%;
+  color: #1b2e59;
+  font-family: "Archivo";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: -0.16px;
+  position: relative;
+}
+.section_about .list_characteristics li p {
+  margin-left: 20px;
+}
+.section_about .list_characteristics li p::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border: 2px solid #266ff2;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  border-radius: 50%;
+}
+.section_about .list_characteristics li p::after {
+  content: "";
+  width: 2px;
+  height: 2px;
+  background-color: var(--bg-secondary-color);
+  transform: translateX(-121.6px);
+  position: absolute;
+  top: 8px;
+}
+
+.section_about .box_btn_about {
+  width: 100%;
+}
+.section_about .box_btn_about button {
+  display: inline-flex;
+  padding: 15px 42.69px 15px 42px;
+  align-items: flex-start;
+  border-radius: 5px;
+  background: #266ff2;
+  color: #fff;
+  font-family: "Arimo";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+.section_about .box_btn_about :hover {
+  filter: brightness(1.3);
+}
+@media (max-width: 1378px) {
+  .section_about_us .card_about_us .card_wrapper {
+    width: 500px;
+    flex-direction: column;
+    height: 100%;
+  }
+  .section_about_us .card_about_us {
+    width: 100%;
+    background: var(--bg-secondary-color);
+    padding: 130px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .section_about_us .card_about_us .card_wrapper .card_box .dots {
+    display: none;
+  }
+  .section_about .img_about {
+    display: none;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 810px) {
+  .section_about {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .section_about .about_content_wrapper .heading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .section_about .about_content_wrapper .heading h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .section_about .about_content_wrapper,
+  .section_about .about_content_wrapper .heading .box_span {
+    width: 100%;
+    height: 100%;
+  }
+  .section_about .box_btn_about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .section_about .list_characteristics {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}

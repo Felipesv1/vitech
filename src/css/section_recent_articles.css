@@ -1,0 +1,182 @@
+.recent_articles {
+  width: 100%;
+  height: auto;
+  background-color: var(--bg-primary-color);
+}
+
+.recent_articles .container {
+  display: flex;
+  width: 100%;
+  max-width: 132rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 0 auto;
+  margin-bottom: 125px;
+  margin-top: 125px;
+}
+.recent_articles .container .section_heading {
+  width: 63.6rem;
+  height: 103.39px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.recent_articles .container .section_heading p {
+  color: #266ff2;
+  text-align: center;
+  font-family: "Arimo";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+}
+.recent_articles .container .section_heading .pseudo {
+  width: 148px;
+  height: 2px;
+  background: #266ff2;
+}
+
+.recent_articles .container .section_heading h2 {
+  color: #1b2e59;
+  text-align: center;
+  font-family: Archivo;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -0.48px;
+  margin-top: 18px;
+}
+.recent_articles .container .articles {
+  width: 100%;
+  align-items: center;
+  height: auto;
+  display: flex;
+}
+.recent_articles .container .article_item {
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  padding: 30px 12px 0px 12px;
+  align-items: flex-start;
+  gap: 35.01px;
+}
+.recent_articles .container .article_item img {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.recent_articles .container .article_item .content_article {
+  width: 416px;
+  height: 161.19px;
+}
+
+.recent_articles .container .article_item .content_article .meta_info {
+  display: flex;
+  width: 416px;
+  padding-right: 152.45px;
+  align-items: center;
+  align-content: center;
+  gap: 0px 49.55px;
+  flex-wrap: wrap;
+}
+
+.recent_articles .container .article_item .content_article .meta_info span {
+  color: #727885;
+  font-family: "Arimo";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.recent_articles .container .article_item .content_article .meta_info p {
+  color: #727885;
+  font-family: "Arimo";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.recent_articles .container .article_item .content_article .meta_info p b {
+  color: #1b2e59;
+  font-family: "Arimo";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  margin-left: 5px;
+}
+
+.recent_articles .container .article_item .content_article h3 {
+  width: 400px;
+  color: #1b2e59;
+  font-family: "Archivo";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33.6px;
+}
+
+.recent_articles .container .article_item .content_article .article_cats {
+  display: flex;
+  width: 416px;
+  padding: 10px 145.36px 0px 0px;
+  align-items: center;
+  align-content: center;
+  gap: 0px 20px;
+  flex-wrap: wrap;
+}
+
+.recent_articles .container .article_item .content_article .article_cats p {
+  display: flex;
+  padding: 1px 13.75px 3px 14px;
+  align-items: flex-start;
+  border-radius: 5px;
+  border: 1px solid #e6eefb;
+  text-decoration: none;
+  color: #bbc1ce;
+  font-family: Archivo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 500ms all;
+}
+
+.recent_articles
+  .container
+  .article_item
+  .content_article
+  .article_cats
+  p:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1378px) {
+  .recent_articles .container .articles {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 810px) {
+  .recent_articles .container .section_heading {
+    width: 100%;
+  }
+  .recent_articles .container .article_item,
+  .recent_articles .container .article_item img,
+  .recent_articles .container .article_item .content_article,
+  .recent_articles .container .article_item .content_article h3 {
+    width: 100%;
+  }
+  .recent_articles .container .article_item .content_article .article_cats,
+  .recent_articles .container .article_item .content_article .meta_info {
+    width: 100%;
+    padding: 0px;
+  }
+}

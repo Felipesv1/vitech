@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-primary-color-btn: #0e116e;
+  --bg-secondary-color-btn: #266ff2;
+  --bg-secondary-color: #e6eefb;
+  --bg-primary-color: #ffffff;
+  font-size: 62.5%;
+}
+
+.copy {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 0px 12px 2px 12px;
+  align-items: center;
+}
+.copy {
+  color: #727885;
+  text-align: center;
+  font-family: "Arimo";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}

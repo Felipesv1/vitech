@@ -1,0 +1,148 @@
+.our_soluctions {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 70px;
+  background: var(--bg-primary-color);
+}
+
+.our_soluctions .section_heading {
+  width: 107.6rem;
+  height: 103.39px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+}
+.our_soluctions .section_heading p {
+  color: #266ff2;
+  text-align: center;
+  font-family: "Arimo";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+}
+.our_soluctions .section_heading .pseudo {
+  width: 146px;
+  height: 2px;
+  background: #266ff2;
+}
+
+.our_soluctions .section_heading h2 {
+  color: #1b2e59;
+  text-align: center;
+  font-family: "Archivo";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -0.48px;
+}
+
+.our_soluctions .slide_soluctions {
+  width: 130rem;
+  display: flex;
+  margin: 45px;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+  position: relative;
+}
+.our_soluctions .slide_soluctions .container_slide {
+  display: flex;
+  transition: tranform 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+.our_soluctions .slide_soluctions .container_slide .soluction {
+  display: flex;
+  width: 324px;
+  padding: 50px 51px 50px 50px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  border: 1px solid #e6eefb;
+}
+.our_soluctions .slide_soluctions .container_slide .soluction :nth-child(1) {
+  position: relative;
+}
+.our_soluctions .slide_soluctions .container_slide .soluction p {
+  color: #1b2e59;
+  font-family: "Archivo";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.our_soluctions .slide_soluctions .btn-prev {
+  width: 50px;
+  height: 50px;
+  margin-top: 90px;
+  position: absolute;
+  cursor: pointer;
+  transition: 300ms all;
+  z-index: 100;
+}
+.our_soluctions .slide_soluctions .btn-prev:hover {
+  transform: scale(1.2);
+}
+.our_soluctions .slide_soluctions .btn-next {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  margin-top: 90px;
+  cursor: pointer;
+  transition: 300ms all;
+}
+.our_soluctions .slide_soluctions .btn-next:hover {
+  transform: scale(1.2);
+}
+.our_soluctions .btn_see_soluctions {
+  display: inline-flex;
+  padding: 15px 42.36px 15px 42px;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 5px;
+  background: var(--bg-secondary-color-btn);
+  color: #fff;
+  text-align: center;
+  font-family: "Arimo";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+.our_soluctions .btn_see_soluctions:hover {
+  filter: brightness(1.3);
+}
+
+@media (max-width: 1100px) {
+  .our_soluctions .section_heading {
+    width: 80rem;
+  }
+}
+
+@media (max-width: 1378px) {
+  .our_soluctions .slide_soluctions {
+    width: 29%;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 850px) {
+  .our_soluctions .slide_soluctions {
+    width: 324px;
+    overflow: hidden;
+  }
+  .our_soluctions .section_heading {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,178 @@
+header {
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--bg-primary-color);
+  font-family: "Arimo";
+}
+
+header .logo {
+  width: 155.357px;
+  height: 50px;
+  object-fit: cover;
+}
+
+header .menu_wrapper {
+  width: 65%;
+  height: 7.1rem;
+  display: inline-flex;
+  padding: 10.5px 10.5px 10.5px 311px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 319.54px;
+  border-radius: 10px;
+  background: #e6eefb;
+}
+
+header .menu_wrapper nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+header .menu_wrapper .list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  height: 30px;
+}
+header .menu_wrapper nav .list .item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  height: 3rem;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  padding-left: 20px;
+  text-transform: uppercase;
+  transition: 330ms all;
+}
+header .menu_wrapper nav .list .item:hover {
+  transform: scale(1.2);
+}
+header .menu_wrapper nav .list .item a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #1b2e59;
+}
+
+header .menu_wrapper nav .list .item a::before,
+header .menu_wrapper nav .list .item label::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  width: 9px;
+  height: 9px;
+  border-radius: 4.5px;
+  opacity: 0.3;
+  background-color: #09c3ff;
+}
+
+header .menu_wrapper nav .list .item label {
+  width: 5.8rem;
+  margin-right: 25px;
+  color: #1b2e59;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+header .menu_wrapper nav .list .item select {
+  background-color: var(--bg-secondary-color);
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+header .menu_wrapper .btn_budget {
+  background-color: var(--bg-primary-color-btn);
+  display: flex;
+  padding: 10px 43.02px 10px 42px;
+  align-items: flex-start;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+header .menu_wrapper .btn_budget:hover {
+  filter: brightness(1.3);
+}
+header .menu {
+  transition: 300ms all;
+  cursor: pointer;
+  display: none;
+}
+header .menu:hover {
+  transform: scale(1.1);
+}
+header .menu_wrapper nav .btn_mobile {
+  display: none;
+}
+
+@media (max-width: 1520px) {
+  header .menu_wrapper {
+    padding: 0;
+  }
+  header .menu_wrapper .list {
+    width: 100%;
+  }
+  header .menu_wrapper nav .list .item a::before,
+  header .menu_wrapper nav .list .item label::before {
+    left: -5px;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 1000px) {
+  header .menu_wrapper nav .btn_mobile {
+    display: flex;
+    cursor: pointer;
+  }
+  #menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 0;
+    top: 150px;
+    left: 0;
+    height: 100vh;
+    visibility: hidden;
+    overflow-y: hidden;
+    transition: 0.6s;
+    z-index: 1000;
+    background-color: #e6eefb;
+  }
+  #menu li:hover {
+    transform: scale(1.2);
+  }
+  #menu.active {
+    width: 100%;
+    visibility: visible;
+    overflow-y: auto;
+  }
+  header .menu_wrapper nav {
+    justify-content: space-evenly;
+    width: 50%;
+  }
+  header .menu_wrapper {
+    background: none;
+  }
+  header .logo {
+    margin-left: 5px;
+  }
+}

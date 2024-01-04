@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;700&family=Arimo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="src/css/section_summary.css">
+    <link rel="stylesheet" href="src/css/section_about_us.css">
+    <link rel="stylesheet" href="src/css/section_our_soluctions.css">
+    <link rel="stylesheet" href="src/css/section_our_job.css">
+    <link rel="stylesheet" href="src/css/section_licence_and_softwares.css">
+    <link rel="stylesheet" href="src/css/section_depositions.css">
+    <link rel="stylesheet" href="src/css/section_recent_articles.css">
+    <link rel="stylesheet" href="src/css/section_contact_us.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
+    <title>Vitech</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="src/assets/logo-vitech.png" alt="logo Vitech" name="logo-vitech">
+        <section class="menu_wrapper">
+            <nav id="navigation">
+                <ul class="list" id="menu">
+                    <li onclick="toggleMenu()" class="item"><a href="">Início</a></li>
+                    <li onclick="toggleMenu()" class="item"><a href="#about">Sobre Nós</a></li>
+                    <li onclick="toggleMenu()" class="item">
+                        <label  for="">Soluções</label>
+                        <select name="soluctions" id="soluctions">
+                            <option value=""></option>
+                            <option value="Solução 1">S1</option>
+                            <option value="Solução 2">S2</option>
+                            <option value="Solução 3">S3</option>
+                            <option value="Solução 4">S4</option>
+                        </select></li>
+                    <li onclick="toggleMenu()" class="item"><a href="#contact">Contato</a></li>
+                    <button  onclick="toggleMenu()" class="btn_budget">
+                        Orçamento
+                    </button>
+                </ul>
+                <img class="btn_mobile" onclick="toggleMenu()" src="src/assets/itemmenu.png" alt="botão menu">
+            </nav>
+        </section>
+        <img src="src/assets/itemmenu.png" class="menu" alt="menu" name="menu">
+    </header>
+    <main>
+        <section class="section_summary">
+            <section class="section_initial">
+                <div class="box_infos">
+                    <div class="box_text">
+                        <h1>Soluções em infraestrutura para o seu negócio<h1>
+                            <div class="box_preview_soluctions">
+                                <button class="btn_soluctions">soluções</button>
+                                <div class="box_video_watch">
+                                    <img class="btn_play" src="src/assets/play.png"alt="button play video">
+                                    <span class="text_watch">Assistir Vídeo</span>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="box_social_links">
+                        <ul class="social_links">
+                            <li>
+                                <img src="src/assets/facebook.png" alt="logo facebook"> 
+                                <a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                            <li>
+                                <img src="src/assets/youtube.png" alt="logo youtube">
+                                <a href="https://www.youtube.com" target="_blank">Youtube</a>
+                            </li>
+                            <li>
+                                <img src="src/assets/linkedin.png" alt="">
+                                <a href="https://www.linkedin.com">Linkedin</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box_imgs_feedback">
+                    <div class="feedback_service">
+                        <img src="src/assets/feedback_service.png" alt="feedback sobre os mais de 300 clientes atendidos">
+                    </div>
+                    <div class="feedback_satisfaction">
+                        <img src="src/assets/feedback_satisfaction.png" alt="feedback sobre a satisfação dos clientes">
+                    </div>
+                    <div class="box_men">
+                        <img src="src/assets/hero.png" alt="homem branco olhando para o lado segurando papeis">
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="section_about_us" id="about">
+            <section class="card_about_us">
+                <section class="card_wrapper">
+                    <div class="card_box">
+                        <div class="content_card">
+                            <img src="src/assets/card-icon-experience.png" alt="icon experience">
+                            <p>Experiência multi indústria</p>
+                        </div>
+                        <div class="dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="card_box">
+                        <div class="content_card">
+                            <img src="src/assets/card-icon-e&l.png" alt="icon esportivo & liderança">
+                            <p>Expertise & Liderança</p>
+                        </div>
+                        <div class="dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="card_box">
+                        <div class="content_card">
+                            <img src="src/assets/card-icon-soluçoesTi.png" alt="icon Soluções em TI">
+                            <p>Soluções em TI</p>
+                        </div>
+                        <div class="dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="section_about">
+                <img class="img_about" src="src/assets/about.png" alt="imagem de algumas pessoas">
+                <div class="about_content_wrapper">
+                    <div class="heading">
+                        <p>Quem somos</p>
+                        <div class="pseudo"></div>
+                        <h2>Um time de especialistas em infraestrutura interna</h2>
+                        <div class="box_span">
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.</span>
+                        </div>
+                    </div>
+                    <ul class="list_characteristics">
+                        <li> <p>Característica 1</p> </li>
+                        <li> <p>Característica 2</p> </li>
+                        <li> <p>Característica 3</p> </li>
+                        <li> <p>Característica 4</p> </li>
+                        <li> <p>Característica 5</p> </li>
+                    </ul>
+                    <div class="box_btn_about">
+                        <button class="btn_about">Sabia mais sobre nós</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="our_soluctions" id="soluctions">
+            <section class="section_heading">
+                <p>Nossas Soluções</p>
+                <div class="pseudo"></div>
+                <h2>Tecnologia para crescer juntos</h2>
+            </section>
+            <section class="slide_soluctions">
+                <img class="btn-prev" src="src/assets/btn-prev.png" alt="botão para mostrar os card anteriores que não estão aparecendo na tela do slide">
+                <div class="container_slide">
+                    <div class="soluction">
+                        <img src="src/assets/service-icon-1.png" alt="card solução 1">
+                        <p>Solução 1</p>
+                    </div>
+                    <div class="soluction">
+                        <img src="src/assets/service-icon-2.png" alt="card solução 2">
+                        <p>Solução 2</p>
+                    </div>
+                    <div class="soluction">
+                        <img src="src/assets/service-icon-3.png" alt="card solução 3">
+                        <p>Solução 3</p>
+                    </div>
+                    <div class="soluction">
+                        <img src="src/assets/service-icon-4.png" alt="card solução 4">
+                        <p>Solução 4</p>
+                    </div>
+                    <div class="soluction">
+                        <img src="src/assets/service-icon-1.png" alt="Solução 5">
+                        <p>Solução 5</p>
+                    </div>
+                </div>
+                <img class="btn-next"src="src/assets/btn-next.png" alt="botão para mostrar os proximos card que não estão aparecendo na tela do slide">
+            </section>
+            <button class="btn_see_soluctions">Ver todas as soluções</button>
+        </section>
+        <section class="our_job">
+            <section class="section_heading">
+                <p>Nosso trabalho</p>
+                <div class="pseudo"></div>
+                <h2>Como ajudamos a sua empresa a crescer</h2>
+            </section>
+            <section class="cards_jobs">
+                <div class="box_workflow">
+                    <div class="box_icon">
+                        <img src="src/assets/workflow-icon-1.png" alt=" first icon">
+                        <span class="count">01</span>
+                    </div>
+                    <div class="content">
+                        <h3>Lorem Ipsum Is Simply</h3>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    </div>
+                </div>
+                <div class="box_workflow">
+                    <div class="box_icon">
+                        <img src="src/assets/workflow-icon-2.png" alt="second icon">
+                        <span class="count">02</span>
+                    </div>
+                    <div class="content">
+                        <h3>Lorem Ipsum Is Simply</h3>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    </div>
+                </div>
+                <div class="box_workflow">
+                    <div class="box_icon">
+                        <img src="src/assets/workflow-icon-3.png" alt=" third icon">
+                        <span class="count">03</span>
+                    </div>
+                    <div class="content">
+                        <h3>Lorem Ipsum Is Simply</h3>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    </div>
+                </div>
+                <div class="box_workflow">
+                    <div class="box_icon">
+                        <img src="src/assets/workflow-icon-4.png" alt="fourth icon">
+                        <span class="count">04</span>
+                    </div>
+                    <div class="content">
+                        <h3>Lorem Ipsum Is Simply</h3>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="licence_and_softwares">
+            <section class="box_content">
+                <div class="box_image">
+                    <img class="licence_img" src="src/assets/wcu-bg-1.png" alt="image">
+                </div>
+                <section class="infos">
+                    <section class="section_heading">
+                        <p>Licenças e softwares</p>
+                        <div class="pseudo"></div>
+                        <h2>Recursos que trazem produtividade</h2>
+                    </section>
+                    <section class="cards_info">
+                        <div class="card">
+                            <img src="src/assets/wcu-icon-1.png" alt="icone">
+                            <div class="content_card">
+                                <h3>Lorem Ipsum Is Simply</h3>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="src/assets/wcu-icon-2.png" alt="icone">
+                            <div class="content_card">
+                                <h3>Lorem Ipsum Is Simply</h3>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section class="depositions">
+            <section class="container">
+                <div class="section_heading">
+                    <p>depoimentos</p>
+                    <div class="pseudo"></div>
+                    <h2>O que os clientes tem a dizer sobre a VITECH</h2>
+                </div>
+                <section class="box_testimonials">
+                    <div class="slide_testimonial">
+                        <div class="testimonial_item">
+                            <div class="box_perfil">
+                                <img class="perfil" src="src/assets/testimonial-1.png"  alt="foto de uma pessoa que deu um depoimento em perfil">
+                                <span class="symbol"><img src="src/assets/symbol.png" alt=""></span>
+                            </div>
+                            <div class="content">
+                                <div class="pseudo_vertical"></div>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                    <h3>Leslie Alexander</h3>
+                                    <span class="profession">ceo cresol</span>
+                            </div>
+                        </div>
+                        <div class="testimonial_item">
+                            <div class="box_perfil">
+                                <img class="perfil" src="src/assets/testimonial-2.png"  alt="foto de uma pessoa que deu um depoimento em perfil">
+                                <span class="symbol"><img src="src/assets/symbol.png" alt=""></span>
+                            </div>
+                            <div class="content">
+                                <div class="pseudo_vertical"></div>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                    <h3>Jorge Martinez Rumeu</h3>
+                                    <span class="profession">cto havan</span>
+                            </div>
+                        </div>
+                        <div class="testimonial_item">
+                            <div class="box_perfil">
+                                <img class="perfil" src="src/assets/testimonial-3.png" alt="foto de uma pessoa que deu um depoimento em perfil">
+                                <span class="symbol"><img src="src/assets/symbol.png" alt=""></span>
+                            </div>
+                            <div class="content">
+                                <div class="pseudo_vertical"></div>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                    <h3>Daniel Talbot</h3>
+                                    <span class="profession">Fundador HBrehmer</span>
+                            </div>
+                        </div>
+                        <div class="testimonial_item">
+                            <div class="box_perfil">
+                                <img class="perfil" src="src/assets/testimonial-1.png" alt="">
+                                <span class="symbol"><img src="src/assets/symbol.png" alt=""></span>
+                            </div>
+                            <div class="content">
+                                <div class="pseudo_vertical"></div>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                    <h3>Leslie Alexander</h3>
+                                    <span class="profession">ceo cresol</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="box_slide">
+                <div class="btn_prev_testimonial">
+                    <img  src="src/assets/vector_prev.png" alt="otão para mostrar os card anteriores que não estão aparecendo na tela do slide">  
+                </div>
+                <div class="btn_next_testimonial" >
+                    <img src="src/assets/vector_next.png" alt="botão para mostrar os proximos card que não estão aparecendo na tela do slide">
+                </div>
+            </section>
+        </section>
+        <section class="recent_articles">
+            <section class="container">
+                <div class="section_heading">
+                    <p>artigos recentes</p>
+                    <div class="pseudo"></div>
+                    <h2>Notícias</h2>
+                </div>
+                <section class="articles">
+                    <div class="article_item">
+                        <img src="src/assets/image-1.png" alt="imagem de um homem branco de jaqueta azul e uma blusa verde musgo olhando para o lado segurando o  tablet coms as duas mãos">
+                        <section class="content_article">
+                            <div class="meta_info">
+                                <span>03/02/2023</span>
+                                <p>Por<b>VITECH</b></p>
+                            </div>
+                            <h3>Lorem Ipsum is simply dummy text of the printing</h3>
+                            <div class="article_cats">
+                                <p>Tecnologia</p>
+                                <p>Infraestrutura</p>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="article_item">
+                        <img src="src/assets/image-1.png" alt="imagem de um homem branco de jaqueta azul e uma blusa verde musgo olhando para o lado segurando o  tablet coms as duas mãos">
+                        <section class="content_article">
+                            <div class="meta_info">
+                                <span>03/02/2023</span>
+                                <p>Por<b>VITECH</b></p>
+                            </div>
+                            <h3>Lorem Ipsum is simply dummy text of the printing</h3>
+                            <div class="article_cats">
+                                <p>Tecnologia</p>
+                                <p>Infraestrutura</p>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="article_item">
+                        <img src="src/assets/image-1.png" alt="imagem de um homem branco de jaqueta azul e uma blusa verde musgo olhando para o lado segurando o  tablet coms as duas mãos">
+                        <section class="content_article">
+                            <div class="meta_info">
+                                <span>03/02/2023</span>
+                                <p>Por<b>VITECH</b></p>
+                            </div>
+                            <h3>Lorem Ipsum is simply dummy text of the printing</h3>
+                            <div class="article_cats">
+                                <p>Tecnologia</p>
+                                <p>Infraestrutura</p>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <section class="contact_us" id="contact">
+            <section class="contacts">
+                <div class="contact_info_box">
+                        <img src="src/assets/phone.png" alt="imagem de um telefone">
+                        <div class="content">
+                            <span class="call_me">ligue</span>
+                            <h4>Fale com um de nossos especialistas em infraestrutura</h4>
+                            <button>ligar agora</button>
+                        </div>
+                </div>
+                <div class="contact_info_box">
+                    <img src="src/assets/envelope.png" alt="imagem de um envelope">
+                    <div class="content">
+                        <span class="message">mensagem</span>
+                        <h4>envie uma mensagem e tire suas dúvidas</h4>
+                        <button>enviar mensagem</button>
+                    </div>
+            </div>
+            <div class="contact_info_box">
+                <img src="src/assets/desk.png" alt="imagem de um desktop ">
+                <div class="content">
+                    <span class="support">suporte</span>
+                    <h4>acesse o painel do cliente e gerencie seus serviços e chamados</h4>
+                    <button>acessar agora</button>
+                </div>
+        </div>
+            </section>
+        </section>
+    </main>
+    <footer class="infos_additional">
+        <section class="infos">
+            <div class="networks">
+                <div class="about_widget">
+                    <img class="logo" src="src/assets/logo-vitech.png" alt="logo">
+                    <p> <img src="src/assets/vector_local.png" alt=""> Endereço da empresa</p>
+                    <p> <img src="src/assets/vector_email.png" alt="">email@email.com.br</p>
+                    <div class="social_links">
+                        <a href="http://facebook.com">  <img src="src/assets/symbol_face.png" alt="icone facebook"></a>
+                        <a href="http://instagram.com" target="_blank">
+                        <img src="src/assets/symbol_insta.png" alt="icone instagram">
+                    </a>
+                    <a href="http://linkedin.com" target="_blank">
+                        <img src="src/assets/symbol_linkedin.png" alt="icone linkedin">
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="summary_soluctions">
+                <div class="widget">
+                    <h4>Soluções</h4>
+                    <ul>
+                        <li>Solução 1</li>
+                        <li>Solução 2</li>
+                        <li>Solução 3</li>
+                        <li>Solução 4</li>
+                        <li>Solução 5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="summary_institucional">
+                <div class="widget">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li>Início</li>
+                        <li>Sobre Nós</li>
+                        <li>Contato</li>
+                        <li>Blog</li>
+                        <li>Política de Privacidade</li>
+                    </ul>
+                </div>
+            </section>
+            <div class="copy">
+                <p>Copyright © 2023 VITECH - Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    <script src="src/js/main.js"></script>
+</body>
+</html>

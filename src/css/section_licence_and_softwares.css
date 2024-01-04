@@ -1,0 +1,161 @@
+.licence_and_softwares {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 700px;
+  background: var(--bg-primary-color);
+}
+.licence_and_softwares .box_content {
+  display: flex;
+  width: 132rem;
+  height: 490px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 120px;
+}
+
+.licence_and_softwares .box_content .infos {
+  display: flex;
+  width: 700px;
+  height: 490px;
+  max-width: 1320px;
+  padding-bottom: 23.41px;
+  flex-direction: column;
+  align-items: center;
+  gap: 35.01px;
+}
+.licence_and_softwares .box_content .infos .section_heading {
+  width: 636px;
+  height: 163.39px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.licence_and_softwares .box_content .infos .section_heading p {
+  color: #266ff2;
+  text-align: center;
+  font-family: "Arimo";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+}
+.licence_and_softwares .box_content .infos .section_heading .pseudo {
+  width: 183px;
+  height: 3px;
+  background: #266ff2;
+}
+.licence_and_softwares .box_content .infos .section_heading h2 {
+  width: 636px;
+  color: #1b2e59;
+  font-family: "Archivo";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -0.48px;
+  margin-top: 15px;
+}
+.licence_and_softwares .box_content .cards_info {
+  display: flex;
+  width: 660px;
+  padding-top: 30px;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.licence_and_softwares .box_content .cards_info .card {
+  display: flex;
+  width: 306px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 34px;
+}
+.licence_and_softwares .box_content .cards_info .card img {
+  width: 70px;
+  height: 73px;
+  max-width: 306px;
+}
+.licence_and_softwares .box_content .cards_info .card .content_card {
+  display: flex;
+  width: 306px;
+  padding: 0px 60px 0.01px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14.18px;
+}
+.licence_and_softwares .box_content .cards_info .card .content_card h3 {
+  color: #1b2e59;
+  text-align: center;
+  font-family: "Archivo";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25.2px;
+}
+.licence_and_softwares .box_content .cards_info .card .content_card p {
+  width: 246px;
+  padding: 0px 5px 1px 0px;
+  align-items: flex-start;
+  color: #727885;
+  text-align: start;
+  font-family: "Arimo";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+@media (max-width: 1378px) {
+  .licence_and_softwares .box_content .licence_img {
+    display: none;
+  }
+  .licence_and_softwares .box_content {
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 850px) {
+  .licence_and_softwares .box_content {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .licence_and_softwares .box_content .infos {
+    width: 100%;
+    height: 100%;
+  }
+  .licence_and_softwares .box_content .infos .section_heading {
+    align-items: center;
+    width: 100%;
+  }
+  .licence_and_softwares .box_content .infos .section_heading h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .licence_and_softwares .box_content .cards_info {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0px;
+    margin-top: 5px;
+  }
+  .licence_and_softwares .box_content .cards_info .card .content_card p {
+    width: 100%;
+    text-align: center;
+  }
+  .licence_and_softwares .box_content .cards_info .card {
+    align-items: center;
+  }
+  .licence_and_softwares .box_content .cards_info .card .content_card {
+    padding: 0px;
+    align-items: center;
+  }
+}

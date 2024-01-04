@@ -1,0 +1,97 @@
+.contact_us {
+  display: flex;
+  width: 100%;
+  padding: 100px 292.5px 0px 292.5px;
+  align-items: flex-start;
+  background-color: var(--bg-secondary-color);
+}
+.contact_us .contacts {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.contact_us .contact_info_box {
+  display: flex;
+  width: 416px;
+  padding: 52.26px 50px 50px 50px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20.74px;
+  border-radius: 10px;
+  background: #fff;
+}
+.contact_us .contact_info_box img {
+  width: 27px;
+  height: 27px;
+  max-width: 27px;
+}
+.contact_us .contact_info_box .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 316px;
+  height: 232px;
+  border: 1px solid beige;
+}
+.contact_us .contact_info_box .content .call_me {
+  color: #266ff2;
+}
+.contact_us .contact_info_box .content .message {
+  color: #fdc330;
+}
+.contact_us .contact_info_box .content .support {
+  color: #09c3ff;
+}
+.contact_us .contact_info_box .content .call_me,
+.contact_us .contact_info_box .content .message,
+.contact_us .contact_info_box .content .support {
+  font-family: "Arimo";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contact_us .contact_info_box .content h4 {
+  width: 210px;
+  color: #1b2e59;
+  font-family: "Archivo";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  text-transform: capitalize;
+}
+.contact_us .contact_info_box .content button {
+  display: inline-flex;
+  padding: 7.5px 40.92px 7.5px 40px;
+  align-items: flex-start;
+  border-radius: 5px;
+  background: #266ff2;
+  color: #fff;
+  font-family: "Arimo";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+.contact_us .contact_info_box .content button:hover {
+  filter: brightness(1.2);
+}
+@media screen and (min-width: 300px) and (max-width: 850px) {
+  .contact_us {
+    padding: 100px 0 0 0;
+  }
+  .contact_us .contact_info_box {
+    width: 100%;
+  }
+}
