@@ -63,7 +63,7 @@
   text-align: center;
 }
 
-.section_about {
+.section_about_content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,7 +72,7 @@
   padding-bottom: 120px;
 }
 
-.section_about .about_content_wrapper {
+.section_about_content .about_content_wrapper {
   width: 56rem;
   height: 568.39px;
   display: flex;
@@ -80,11 +80,11 @@
   align-items: flex-end;
   justify-content: space-between;
 }
-.section_about .about_content_wrapper .heading {
+.section_about_content .about_content_wrapper .heading {
   width: 55.6rem;
   height: 253.39px;
 }
-.section_about .about_content_wrapper .heading p {
+.section_about_content .about_content_wrapper .heading p {
   color: #266ff2;
   font-family: "Arimo";
   font-size: 14px;
@@ -94,12 +94,12 @@
   letter-spacing: 0.28px;
   text-transform: uppercase;
 }
-.section_about .about_content_wrapper .heading .pseudo {
+.section_about_content .about_content_wrapper .heading .pseudo {
   width: 96.39px;
   height: 2px;
   background: #266ff2;
 }
-.section_about .about_content_wrapper .heading h2 {
+.section_about_content .about_content_wrapper .heading h2 {
   width: 55.7rem;
   color: #1b2e59;
   font-family: "Archivo";
@@ -111,7 +111,7 @@
   margin-top: 20px;
 }
 
-.section_about .about_content_wrapper .heading .box_span {
+.section_about_content .about_content_wrapper .heading .box_span {
   width: 52rem;
   height: 60px;
   color: #727885;
@@ -123,7 +123,7 @@
   margin-top: 30px;
 }
 
-.section_about .list_characteristics {
+.section_about_content .list_characteristics {
   width: 100%;
   display: inline-flex;
   flex-direction: column;
@@ -131,7 +131,7 @@
   gap: 10px;
   list-style: none;
 }
-.section_about .list_characteristics li {
+.section_about_content .list_characteristics li {
   width: 100%;
   color: #1b2e59;
   font-family: "Archivo";
@@ -142,10 +142,10 @@
   letter-spacing: -0.16px;
   position: relative;
 }
-.section_about .list_characteristics li p {
+.section_about_content .list_characteristics li p {
   margin-left: 20px;
 }
-.section_about .list_characteristics li p::before {
+.section_about_content .list_characteristics li p::before {
   content: "";
   width: 9px;
   height: 9px;
@@ -155,7 +155,7 @@
   top: 8px;
   border-radius: 50%;
 }
-.section_about .list_characteristics li p::after {
+.section_about_content .list_characteristics li p::after {
   content: "";
   width: 2px;
   height: 2px;
@@ -165,10 +165,10 @@
   top: 8px;
 }
 
-.section_about .box_btn_about {
+.section_about_content .box_btn_about {
   width: 100%;
 }
-.section_about .box_btn_about button {
+.section_about_content .box_btn_about button {
   display: inline-flex;
   padding: 15px 42.69px 15px 42px;
   align-items: flex-start;
@@ -185,7 +185,7 @@
   border: none;
   cursor: pointer;
 }
-.section_about .box_btn_about :hover {
+.section_about_content .box_btn_about :hover {
   filter: brightness(1.3);
 }
 @media (max-width: 1378px) {
@@ -205,16 +205,18 @@
   .section_about_us .card_about_us .card_wrapper .card_box .dots {
     display: none;
   }
-  .section_about .img_about {
+  .section_about_content .img_about {
     display: none;
   }
 }
 @media screen and (min-width: 300px) and (max-width: 810px) {
-  .section_about {
+  .section_about_us .card_about_us .card_wrapper {
+  }
+  .section_about_content {
     padding-top: 120px;
     padding-bottom: 120px;
   }
-  .section_about .about_content_wrapper .heading {
+  .section_about_content .about_content_wrapper .heading {
     width: 100%;
     height: 100%;
     display: flex;
@@ -222,23 +224,34 @@
     justify-content: center;
     flex-direction: column;
   }
-  .section_about .about_content_wrapper .heading h2 {
+  .section_about_content .about_content_wrapper .heading h2 {
     width: 100%;
     text-align: center;
   }
-  .section_about .about_content_wrapper,
-  .section_about .about_content_wrapper .heading .box_span {
+  .section_about_content .about_content_wrapper,
+  .section_about_content .about_content_wrapper .heading .box_span {
     width: 100%;
     height: 100%;
+    text-align: center;
   }
-  .section_about .box_btn_about {
+  .section_about_content .box_btn_about {
+    margin-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .section_about .list_characteristics {
+  .section_about_content .list_characteristics {
+    margin-top: 15px;
     height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+  }
+  .section_about_content .list_characteristics li p,
+  .section_about_content .list_characteristics li {
+    margin-left: 20px;
+    display: inline;
+    width: 200px;
   }
 }

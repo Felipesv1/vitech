@@ -92,6 +92,9 @@
     padding: 100px 0 0 0;
   }
   .contact_us .contact_info_box {
+    width: 350px;
+  }
+  .contact_us .contact_info_box .content {
     width: 100%;
   }
 }
